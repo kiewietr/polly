@@ -45,6 +45,10 @@
 			$('#polly_help_iframe').show();
 		})
 
+		$('.showPollyHelp').on('click', function() {
+			Polly.openHelp()
+		})
+
 		// $('#polly_help_iframe').attr('src',')
 		
 	}
