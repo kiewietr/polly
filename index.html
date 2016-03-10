@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Polly integration example</title>
+		
+		<!-- Polly uses jquery to do some stuff, please integrate it if you havent already -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<!-- Widet: not yet -->
+		<!--<script type="text/javascript" src="load_polly_widget.js"></script>-->
+
+		<script>
+			/**
+				Polly configuration options, adjust accordingly
+			**/
+			var Polly = Polly || {}
+			Polly.config = {
+
+				//This is your publication id. Change it to the id which you find on the edit page of your publication.
+				publicationId: 'fiB5dA5C9D6tieKdq',
+
+				helpcenter: {
+					width: 900, // Helpcenter lightbox width
+					height: 500, // Helpcenter lightbox height
+					closeButtonBackgroundColor: '#fff', // background color of close button
+					closeButtonForegroundColor: '#000' // foreground / text color of close button
+				}
+			}
+		</script>
+
+		<!-- Polly javascript file -->
+		<script type="text/javascript" src="polly.js"></script>
+
+		<!-- Polly stylesheet file -->
+		<link rel="stylesheet" href="polly.css">
+
+
+	</head>
+	<body>
+
+	<h1>welcome to my ecommerce website!</h1>
+
+	<p>Buy my awesome stuff!</p>
+
+	<!--<h2>Polly widget example</h2>
+
+		<h4 id="polly_widget_heading"></h4>
+		<div id="polly_widget_contents"></div> -->
+
+
+		<h2>Open Polly link</h2>
+		<a href="javascript:void(0)" onclick="Polly.openHelp()">Polly Help Center</a>
+
+		
+
+	</body>
+</html>
