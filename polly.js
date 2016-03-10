@@ -14,7 +14,8 @@
 			width: 900, // Helpcenter lightbox width
 			height: 500, // Helpcenter lightbox height
 			closeButtonBackgroundColor: '#fff', // background color of close button
-			closeButtonForegroundColor: '#000' // foreground / text color of close button
+			closeButtonForegroundColor: '#000', // foreground / text color of close button
+			loadingMessage: 'loading polly help center' 
 		}
 	}
 
@@ -33,7 +34,7 @@
 
 		contentdiv.append('<span onclick="Polly.closeHelp()" class="close" style="background-color: '+Polly.config.helpcenter.closeButtonBackgroundColor+'; color: '+Polly.config.helpcenter.closeButtonForegroundColor+'">X</span>'
 			+'<iframe sandbox="allow-same-origin allow-scripts allow-popups" style="display:none;" id="polly_help_iframe" src="" frameborder="0" height="'+Polly.config.helpcenter.height+'" width="'+Polly.config.helpcenter.width+'"></iframe>'
-			+ '<span class="polly_loader">loading polly help center</span>')
+			+ '<span class="polly_loader">'+Polly.config.helpcenter.loadingMessage+'</span>')
 
 		wrapper.append(contentdiv);
 
