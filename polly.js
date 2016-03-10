@@ -1,4 +1,4 @@
-
+' '
 	/**
 		Polly Javascript file
 	**/
@@ -28,7 +28,7 @@
 			})
 
 		var contentdiv = $('<div/>', {
-			'style' : 'width: ' + Polly.config.helpcenter.width + 'px; height: ' + Polly.config.helpcenter.height
+			'style' : 'width: ' + Polly.config.helpcenter.width + 'px; height: '+ Polly.config.helpcenter.height + 'px;'
 		})
 
 		contentdiv.append('<span onclick="Polly.closeHelp()" class="close" style="background-color: '+Polly.config.helpcenter.closeButtonBackgroundColor+'; color: '+Polly.config.helpcenter.closeButtonForegroundColor+'">X</span>'
